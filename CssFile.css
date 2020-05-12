@@ -1,0 +1,502 @@
+﻿@font-face {
+    font-family: kuljit_Font;
+    src: url("PetitFormalScript-Regular.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    font-family: kuljit_Font;
+}
+body {
+    background-color: rgba(255,0,0,0.5);
+
+}
+
+/*******************************************************************************************/
+/**********Header CSS Style*********************/
+header {
+    background-color: rgba(255,0,0,0.9);
+    min-height: 150px;
+    position: sticky;
+    top: 0;
+    border: 5px solid #00ff21;
+    z-index: 99;
+}
+.logo img {
+    border-radius: 100%;
+    vertical-align: middle;
+    margin-left: 250px;
+}
+
+header span { 
+    font-size: 65px;
+    color: rgba(0, 255, 0,0.9);
+    font-family: Algerian;
+    text-shadow: 4px 4px rgba(0, 0, 153,0.9);
+}
+.welcome-banner h1 {
+    font-family: Algerian;
+    font-size:50px;
+}
+.intro {
+    font-size: 20px;
+    color: #00ff21;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #90F080;
+}
+    .topnav a {
+        float: left;
+        display: block;
+        color: rgba(255,0,0,0.9);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+/******For search button*******/
+#search {
+    float: right;
+    font-size: 25px;
+    margin-top: 8px;
+    margin-right: 8px;
+}
+
+
+.topnav a:hover {
+    background-color: rgba(255,0,0,0.6);
+    color: white;
+}
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+/********************************************************************************************/
+    /***************Footer CSS Style***************/
+footer {
+    float: left;
+    background-color: rgba(255,0,0,0.9);
+}
+
+.footer-top {
+    border: 5px solid #00ff21;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height:390px;
+}
+
+.footer-widget-container > div {
+    display: inline-table;
+    padding-right: 250px;
+    }
+
+.footer-info {
+    width: 40%;
+}
+  .footer-info  img {
+        border-radius:100%;
+  }
+
+    .footer-info p {
+        font-size: 20px;
+        color: rgba(0, 255, 0,0.9);
+    }
+
+    .footer-info h3 {
+        color: rgba(0, 255, 0,0.9);
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+
+.footer-widget h3 {
+    color: rgba(0, 255, 0,0.9);
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.footer-nav {
+    list-style: none;
+    padding: 0px;
+}
+    .footer-nav li a, .footer-nav li {
+        color: rgba(0, 255, 0,0.9);
+        text-decoration: underline;
+        text-decoration-color: #4800ff;
+        font-size: 20px;
+    }
+
+ .footer-nav li a:hover {
+         color: #4800ff;
+ }
+
+.subscribe-input, .footer-sub-btn {
+    color: #00ff21;
+    border: 5px solid black;
+    cursor: pointer;
+    border-radius: 5px;
+    background: rgba(255,0,0,0.8);
+    font-size: 20px;
+}
+.footer-bottom {
+    padding: 0px 0 20px 0;
+    width: 100%;
+}
+footer .copyright {
+    text-align: center;
+    color: black;
+    font-size: 20px;
+}
+
+/************************************************************************************/
+/********************HOME page CSS Style*********************/
+
+.main_pro {
+    width: 100%;
+    display: inline-flex;
+  
+    
+}
+.images {
+    width: 60%;
+    
+    border: 10px solid #90F080;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    background-color: #F08080;
+}
+.aside {
+    width: 30%;
+    border: 10px solid #90F080;
+    background-color: #F08080;
+}
+    .aside img {
+        width: 100%;
+    }
+    .images img { 
+        
+        width: 70%;
+        height: 70%;
+        border-radius: 30%;
+    }
+.slider {
+    position: relative;
+    height: 600px;
+    margin: auto;
+    border: 5px solid red;
+    overflow: hidden;
+}
+
+.slider-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+    .slider-container img {
+        position: absolute;
+        animation: slideshow 20s infinite;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+@keyframes slideshow {
+    25% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+}
+
+.slider-container img:nth-child(5) {
+    animation-delay: 0s;
+}
+
+.slider-container img:nth-child(4) {
+    animation-delay: 5s;
+}
+
+.slider-container img:nth-child(3) {
+    animation-delay: 10s;
+}
+
+.slider-container img:nth-child(2) {
+    animation-delay: 15s;
+}
+
+.slider-container img:nth-child(1) {
+    animation-delay: 20s;
+}
+
+
+/************************************************************************************/
+/********************Gallery page CSS Style*********************/
+.product {
+    width: 80%;
+    margin-left: 15%;
+    display:inline-block;
+    display:flex;
+    flex-wrap:wrap;
+    
+}
+
+.gallery {
+    width:30%;
+    float: left;
+}
+    .gallery img {
+        
+        transition: width;
+    }
+
+        .gallery a img:hover {
+            width: 300px;
+            height:300px;
+        }
+
+/************************************************************************************/
+/********************Product_Details page CSS Style*********************/
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: rgba(255,0,0,0.5);
+}
+
+  /* Style the buttons inside the tab */
+    .tab button {
+        background-color: rgba(255,0,0,0.5);
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 20px;
+    }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #ddd;
+        }
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 2px solid black;
+    background-color: rgba(255,0,0,0.5);
+}
+
+/************************************************************************************/
+/********************Login page CSS Style*********************/
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainer, h2 {
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+    .container a {
+        padding: 10px 40px;
+        background-color: #4CAF50;
+    }
+/*****************************************************************************************/
+/**************************Registration Page CSS Style**********************************/
+#register h1, p {
+    text-align: center;
+    font-size: 30px;
+}
+
+#register {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+    #register input[type="text"],
+    input[type="password"],
+    input[type="tel"],
+    input[type="number"] {
+        width: 100%;
+        height: 40px;
+    }
+
+.registerbtn{
+    width:100px;
+    height:40px;
+    background-color:#4CAF50;
+    border-radius:10px;
+    border:5px solid black;
+}
+/*****************************************************************************************/
+/**************************Contact Page CSS Style**********************************/
+.welcome-banner h1 {
+    text-align: center;
+}
+
+#contact-form input[type=text],
+#contact-form input[type=email],
+#contact-form input[type=tel],
+#contact-form select,
+#contact-form textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#contact-form input[type=radio],
+#contact-form label[for="ot-lang"],
+#contact-form label[for="fr-lang"], 
+#contact-form label[for="en-lang"], 
+#contact-form label[for="ct-pm1"], 
+#contact-form label[for="ct-pm2"] {
+    cursor: pointer;
+}
+
+#contact-form .submit-btn {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 20px 0px 0px 0px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    #contact-form .submit-btn:hover {
+        background-color: #45a049;
+    }
+
+#contact-form .reset-btn {
+    width: 100%;
+    background-color: #AF4C4C;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0px 8px 0px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    #contact-form .reset-btn:hover {
+        background-color: #CC5F5F;
+    }
+
+.contact-form-container {
+    float: left;
+    width: 50%;
+    height:115vh;
+    display: flex;
+   
+    padding: 15px 78px;
+    background: rgba(255,0,0,0.5);
+    position: absolute;
+    margin: 40px;
+    right: 0;
+    border: 1px solid #ccc;
+    z-index: 1;
+    box-shadow: -7px 7px 7px 7px #00ff21;
+}
+
+#contact-form sup {
+    color: red;
+}
+
+#contact-form textarea {
+    resize: none;
+}
+
+/****************For responsiveness*******************/
+@media screen and (min-width:500px) {
+   .slider, .slider-container, .maindiv, .product, .gallery {
+        
+        display: block;
+    }
+
+    .aside, .product_descripition, .reset-btn {
+        display: none;
+    }
+    img {
+        display:inline-block;
+        max-width: 100%;}
+    .video {
+        display: block;
+    }
+
+    iframe {
+        max-width: 100%;
+    }
+    body {
+        background-color: orange;
+    }
+
+}
+/*medium device*/
+@media screen and (min-width:800px) {
+    .slider, .slider-container, .product, .gallery, .product_descripition, .reset-btn {
+        display: block;
+    }
+    .aside  {
+        display: none;
+    }
+    .video {
+        display: block;
+    }
+
+    iframe {
+        max-width: 100%;
+    }
+
+    body {
+        background-color: blue;
+    }
+}
+/*large device*/
+@media screen and (min-width:992px) {
+    .aside, .slider, .slider-container {
+        display: block;
+    }
+    .video {
+        display: block;
+    }
+
+    iframe {
+        max-width: 100%;
+    }
+    body{
+        background-color:#F08080;
+    }
+}
+
+
+
+
+
+
+   
